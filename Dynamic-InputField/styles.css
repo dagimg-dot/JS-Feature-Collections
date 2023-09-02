@@ -73,6 +73,10 @@ button {
   height: 4em;
 }
 
+button#delete {
+  background-color: rgb(179, 22, 22);
+}
+
 input[type=text] {
   padding: 1em;
   border-radius: 1em;
