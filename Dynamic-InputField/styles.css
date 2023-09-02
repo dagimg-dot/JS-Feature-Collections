@@ -30,6 +30,7 @@ html {
   height: 40em;
   border-radius: 2em;
   box-shadow: var(--box-shadow);
+  overflow-y: auto;
 }
 
 .main {
