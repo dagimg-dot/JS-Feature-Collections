@@ -15,7 +15,9 @@ const addFieldHandler = () => {
 const deleteFieldHandler = () => {
   const field = document.querySelector(".field");
   const fieldDivs = document.querySelectorAll(".field > div");
-  field.removeChild(fieldDivs[fieldDivs.length - 1]);
+  if (fieldDivs.length > 0) {
+    field.removeChild(fieldDivs[fieldDivs.length - 1]);
+  }
 };
 
 const appendToNode = ({ children, directParent, mainParent }) => {
