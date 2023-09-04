@@ -23,7 +23,14 @@ const applyStyle = (element) => {
   element.style.borderRadius = "2em";
 };
 
+const scrollToTop = () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+};
+
 document.addEventListener("DOMContentLoaded", fillMain);
+
+const top_btn = document.querySelector(".to-top");
+top_btn.addEventListener("click", scrollToTop);
 
 // Stick NavBar
 
@@ -34,7 +41,9 @@ const sticky = nav.offsetTop;
 const stickNavBar = () => {
   if (window.pageYOffset >= sticky) {
     nav.classList.add("sticky");
+    top_btn.classList.add("sticky-totop");
   } else {
     nav.classList.remove("sticky");
+    top_btn.classList.remove("sticky-totop");
   }
 };
