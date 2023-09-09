@@ -3,11 +3,14 @@ const output = document.querySelector(".output");
 const btn = document.querySelector(".guess-btn");
 
 guessButtonHandler = () => {
-  const guess = document.querySelector("input").value;
-  if (rand == Number(guess)) {
+  const guess = document.querySelector("input");
+  if (rand == Number(guess.value)) {
     output.innerHTML = "You are correct";
-  } else {
+    output.style.color = "green"
+} else {
     output.innerHTML = "Try again";
+    output.style.color = "red"
+    guess.value = ''
   }
 };
 
