@@ -1,3 +1,11 @@
-h1 {
+body {
+    color: blue;
+}
+
+input {
+    color: blue;
+}
+
+button {
     color: blue;
 }
