@@ -6,11 +6,11 @@ guessButtonHandler = () => {
   const guess = document.querySelector("input");
   if (rand == Number(guess.value)) {
     output.innerHTML = "You are correct";
-    output.style.color = "green"
-} else {
+    output.style.color = "green";
+  } else {
     output.innerHTML = "Try again";
-    output.style.color = "red"
-    guess.value = ''
+    output.style.color = "red";
+    guess.value = "";
   }
 };
 
