@@ -37,6 +37,7 @@ guessButtonHandler = () => {
       output.innerHTML =
         '<span>😁</span><h1>You are correct</h1><button class="play-again-btn">Play again</button>';
       output.style.color = "green";
+      disableElement(btn);
       playAginBtnHandler();
     } else {
       count++;
