@@ -49,4 +49,9 @@ button {
     border-radius: 20px;
     border: none;
     background-color: brown;
+    outline: none;
+}
+
+button:hover {
+    box-shadow: 0 .2rem 1.5rem rgba(105, 20, 20, 0.6);
 }

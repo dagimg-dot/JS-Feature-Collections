@@ -9,6 +9,18 @@ body {
     font-weight: 600;
 }
 
+main {
+    height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    font-size: 200px;
+    color: #343a40;
+}
+
 .pagination {
     margin: 100px auto;
     color: rgb(27, 25, 25);
