@@ -33,7 +33,8 @@ guessButtonHandler = () => {
     playAginBtnHandler();
   } else {
     const guess = document.querySelector("input");
-    if (rand == Number(guess.value)) {
+    const int_guess = Number(guess.value);
+    if (rand == int_guess) {
       output.innerHTML =
         '<span>😁</span><h1>You are correct</h1><button class="play-again-btn">Play again</button>';
       output.style.color = "green";
@@ -41,7 +42,11 @@ guessButtonHandler = () => {
       playAginBtnHandler();
     } else {
       count++;
-      output.innerHTML = "<span>😒</span><h1>Try again</h1>";
+      if (int_guess > rand) {
+        output.innerHTML = "<span>😒</span><h1>Try lower</h1>";
+      } else {
+        output.innerHTML = "<span>😒</span><h1>Try higher</h1>";
+      }
       output.style.color = "red";
       guess.value = "";
     }
