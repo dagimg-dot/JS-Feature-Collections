@@ -1,5 +1,6 @@
 const btn_left = document.querySelector(".btn-left");
 const btn_right = document.querySelector(".btn-right");
+const content = document.querySelector(".content")
 
 const pages = document.querySelectorAll(".page-link");
 
@@ -12,6 +13,7 @@ const setCurrentPage = (pageNumber) => {
   pages[pageNumber].classList.add("page-link-current");
   //   pages[pageNumber].style.color = "white";
   currentPage = pageNumber;
+  content.innerHTML = currentPage + 1
 };
 
 setCurrentPage(0);
