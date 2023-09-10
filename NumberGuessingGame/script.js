@@ -19,7 +19,6 @@ playAginBtnHandler = () => {
     rand = Math.round(Math.random() * 10);
     btn.style.backgroundColor = "brown";
     btn.addEventListener("click", guessButtonHandler);
-    console.log("rand: ", rand);
     count = 0;
     guess.value = "";
   });
